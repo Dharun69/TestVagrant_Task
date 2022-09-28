@@ -60,5 +60,10 @@ public class CommonFunc {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
 	}
+	
+	@AfterSuite
+	public void quit() {
+		driver.quit();
+	}
 
 }
